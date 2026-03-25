@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>First Graduate Concession – Joint Declaration Form</title>
+<link rel="stylesheet" href="voice.css">
+<style>
+body{
+  font-family:"Times New Roman", serif;
+  background:#f2f2f2;
+}
+.form-box{
+  width:1000px;
+  margin:20px auto;
+  background:#fff;
+  padding:20px;
+  border:2px solid #000;
+}
+h2{
+  text-align:center;
+  font-size:16px;
+  margin-bottom:10px;
+}
+p{
+  font-size:14px;
+  line-height:1.6;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:10px 0;
+}
+th, td{
+  border:1px solid #000;
+  padding:6px;
+  font-size:14px;
+  vertical-align:middle;
+}
+th{
+  text-align:center;
+}
+input{
+  width:100%;
+  border:none;
+  outline:none;
+  background:transparent;
+  font-size:14px;
+}
+.help{
+  display:none;
+  margin-top:8px;
+  padding:8px;
+  font-size:13px;
+  background:#f7fbff;
+  border-left:4px solid #000080;
+}
+.right{
+  text-align:right;
+}
+.back-btn-container{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.back-btn{
+  background-color: #ffcc00;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+  background-color: #e6b800;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+<!-- TITLE -->
+<h2>FIRST GRADUATE CONCESSION – JOINT DECLARATION FORM</h2>
+<h2>முதல் பட்டதாரி கட்டண விலக்கு – கூட்டு அறிவிப்பு படிவம்</h2>
+
+<!-- INTRODUCTION -->
+<p>
+I hereby declare the following details of my family members and their education qualifications to avail the tuition fee waiver for my studies in Professional Courses under the scheme of waiver of tuition fee to the students from the family where there are no graduates.
+</p>
+
+<p><b>தமிழ்:</b><br>
+பட்டதாரிகள் எவரும் இல்லாத குடும்பங்களைச் சேர்ந்த மாணவர்களுக்கு தொழில்முறை பாடநெறிகளில் கட்டண விலக்கு வழங்கும் திட்டத்தின் கீழ், எனது கல்விக்கான கட்டண விலக்கு பெறுவதற்காக, என் குடும்ப உறுப்பினர்களின் விவரங்களையும் அவர்களது கல்வித் தகுதிகளையும் கீழே அறிவிக்கிறேன்.
+</p>
+
+<!-- TABLE -->
+<table>
+
+<tr>
+<th>Sl. No.<br>(வரிசை எண்)</th>
+<th>Name<br>(பெயர்)</th>
+<th>
+Relationship<br>(உறவு)<br>
+<span style="font-size:12px;">
+Father / Mother / Brother / Sister /<br>
+Grand Father / Grand Mother
+</span>
+</th>
+<th>Age<br>(வயது)</th>
+<th>Educational Qualification<br>(கல்வித் தகுதி)</th>
+<th>Whether Degree holder<br>(பட்டம் பெற்றவரா)</th>
+</tr>
+
+<script>
+const relations = [
+  "Applicant",
+  "Father",
+  "Mother",
+  "Father’s Father",
+  "Father’s Mother",
+  "Mother’s Father",
+  "Mother’s Mother",
+  "Brother / Sister",
+  "Brother / Sister",
+  "Brother / Sister",
+  "Brother / Sister"
+];
+
+for(let i=0;i<relations.length;i++){
+  document.write(`
+  <tr>
+    <td align="center">${i+1}</td>
+    <td><input onfocus="showHelp('name')"></td>
+    <td>${relations[i]}</td>
+    <td><input onfocus="showHelp('age')"></td>
+    <td><input onfocus="showHelp('edu')"></td>
+    <td><input onfocus="showHelp('degree')"></td>
+  </tr>
+  `);
+}
+</script>
+
+</table>
+
+<!-- TAMIL DIRECTIONS -->
+<div id="name" class="help">
+👉 <b>பெயர்:</b> குடும்ப அட்டை / ஆதார் / பள்ளி சான்றிதழில் உள்ள பெயரை எழுதவும்.
+</div>
+
+<div id="age" class="help">
+👉 <b>வயது:</b> தற்போதைய முழு வயதை எழுதவும்.
+</div>
+
+<div id="edu" class="help">
+👉 <b>கல்வித் தகுதி:</b> SSLC / HSC / Diploma / Degree என குறிப்பிடவும்.
+</div>
+
+<div id="degree" class="help">
+👉 <b>பட்டம் பெற்றவரா:</b> பட்டம் இருந்தால் “Yes”, இல்லையெனில் “No” என எழுதவும்.
+</div>
+
+<!-- FIRST DECLARATION -->
+<p>
+I hereby solemnly and sincerely affirm that I am the first person from my family to claim the waiver of Tuition Fee for entire Professional Course of study and there is no graduate in my family so far. The particulars furnished above are true. Should it, however, be found that any information furnished therein is false in material particulars on verification at a later stage, I am liable for criminal prosecution and I also agree to return the amount equal to three times the tuition fee waiver availed by me.
+</p>
+
+<p><b>தமிழ்:</b><br>
+என் குடும்பத்தில் இதுவரை பட்டப்படிப்பு முடித்தவர் எவரும் இல்லை என்றும், முழு தொழில்முறை பாடநெறிக்கான கட்டண விலக்கு பெறும் முதல் நபர் நானே என்றும் உறுதியாக அறிவிக்கிறேன். பின்னர் சரிபார்ப்பில் தவறான தகவல் கண்டறியப்பட்டால், குற்றவியல் நடவடிக்கைக்கும், நான் பெற்ற கட்டண விலக்கு தொகையின் மூன்று மடங்கு தொகையை திருப்பிச் செலுத்தவும் ஒப்புக்கொள்கிறேன்.
+</p>
+
+<p>
+Date (தேதி): ___________<br>
+Place (இடம்): ___________
+</p>
+
+<p class="right">
+<b>SIGNATURE OF THE CANDIDATE</b><br>
+<b>(மாணவரின் கையொப்பம்)</b>
+</p>
+
+<!-- SECOND DECLARATION -->
+<p>
+I solemnly and sincerely affirm that I am fully aware of the above declaration and the particulars furnished in the declaration are correct. I am liable for the criminal action / recovery of amount equal to three times the fees waived for incorrect particulars furnished.
+</p>
+
+<p><b>தமிழ்:</b><br>
+மேலே வழங்கப்பட்ட அறிவிப்புகளை முழுமையாக புரிந்துகொண்டுள்ளேன். தவறான தகவல்கள் வழங்கப்பட்டால், சட்ட நடவடிக்கைக்கும், மூன்று மடங்கு கட்டணத் தொகை வசூலிக்கப்படுவதற்கும் உட்படுவேன்.
+</p>
+
+<p>
+Date (தேதி): ___________<br>
+Place (இடம்): ___________
+</p>
+
+<p class="right">
+<b>SIGNATURE OF THE PARENT / GUARDIAN</b><br>
+<b>(பெற்றோர் / பாதுகாவலர் கையொப்பம்)</b>
+</p>
+<h2>Audio 1: Purpose/நோக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio1')">⏪</button>
+        <button onclick="playPauseAudio('audio1')">▶️</button>
+        <button onclick="forwardAudio('audio1')">⏩</button>
+        <audio id="audio1" src="fguse.ogg"></audio>
+    </div>
+
+    <h2>Audio 2: Explanation/விளக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio2')">⏪</button>
+        <button onclick="playPauseAudio('audio2')">▶️</button>
+        <button onclick="forwardAudio('audio2')">⏩</button>
+        <audio id="audio2" src="fgexp.ogg"></audio>
+    </div>
+</div>
+<div class="back-btn-container">
+  <button type="button" class="back-btn"
+          onclick="window.location.href='main.html'">
+    ⬅ Back to Home
+  </button>
+</div>
+<script src="voice.js"></script>
+<script>
+function showHelp(id){
+  document.querySelectorAll('.help').forEach(h=>h.style.display="none");
+  document.getElementById(id).style.display="block";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Annex-II PLI Loan Form</title>
+
+<style>
+body{
+  font-family:"Times New Roman", serif;
+  background:#f2f2f2;
+}
+.form-box{
+  width:900px;
+  margin:20px auto;
+  background:#fff;
+  padding:10px;
+  border:1px solid #000;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:13px;
+}
+td{
+  border:1px solid #000;
+  padding:6px;
+  vertical-align:top;
+}
+input{
+  width:100%;
+  border:none;
+  outline:none;
+  font-family:"Times New Roman", serif;
+}
+.small{
+  width:30px;
+  text-align:center;
+}
+
+/* tooltip */
+.field-wrap{ position:relative; }
+.tooltip{
+  position:absolute;
+  top:0;
+  left:102%;
+  width:230px;
+  background:#e6f4ff;        /* light blue background */
+  border:1px solid #3399ff;  /* blue border */
+  padding:8px;
+  font-size:13px;
+  display:none;
+  z-index:10;
+  box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+<table>
+
+<tr>
+<td colspan="6">
+<b>Annex – II</b><br>
+<b>APPLICATION FOR LOAN ON SECURITY OF PLI / RPLI POLICY</b><br>
+(Please fill in BLOCK letters)
+</td>
+</tr>
+
+<tr>
+<td colspan="6"><b>Service Request No. :</b> (For official only)</td>
+</tr>
+
+<tr>
+<td colspan="6"><b>1. Policy Details</b></td>
+</tr>
+
+<tr>
+<td class="small">i</td>
+<td>Policy No.</td>
+<td colspan="2" class="field-wrap">
+<input onfocus="show(this,'Policy Number – உங்கள் PLI / RPLI காப்பீட்டு எண்')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td>Name of Insurant</td>
+<td class="field-wrap">
+<input onfocus="show(this,'Name of Insurant – காப்பீடு எடுத்த நபரின் பெயர்')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td class="small">iii</td>
+<td>Sum Assured</td>
+<td colspan="2" class="field-wrap">
+<input onfocus="show(this,'Sum Assured – காப்பீட்டின் மொத்த உறுதி தொகை')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td>Date of Acceptance</td>
+<td class="field-wrap">
+<input onfocus="show(this,'Date of Acceptance – Policy ஏற்றுக்கொண்ட தேதி')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td class="small">v</td>
+<td>Date of Maturity</td>
+<td colspan="2" class="field-wrap">
+<input onfocus="show(this,'Date of Maturity – Policy முடியும் தேதி')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td>Amount of Loan required</td>
+<td class="field-wrap">
+<input onfocus="show(this,'Loan Amount – நீங்கள் பெற விரும்பும் கடன் தொகை')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td class="small">vii</td>
+<td colspan="5" class="field-wrap">
+Purpose for which Loan is required :
+<input onfocus="show(this,'Purpose – இந்த கடன் எதற்காக')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td colspan="6"><b>2. Details of Previous Loan taken on this Policy (if any)</b></td>
+</tr>
+
+<tr>
+<td class="small">i</td>
+<td>Amount of Previous Loan</td>
+<td colspan="2" class="field-wrap">
+<input onfocus="show(this,'Previous Loan – முன்பு பெற்ற கடன் தொகை')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td>Sanction No.</td>
+<td class="field-wrap">
+<input onfocus="show(this,'Sanction No – கடன் அனுமதி எண்')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td class="small">iii</td>
+<td>Sanction Date</td>
+<td colspan="2" class="field-wrap">
+<input onfocus="show(this,'Sanction Date – கடன் அனுமதி பெற்ற தேதி')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td>Date of final repayment</td>
+<td class="field-wrap">
+<input onfocus="show(this,'Final Repayment Date – முழுமையாக செலுத்திய தேதி')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td colspan="6"><b>4. Communication Address</b></td>
+</tr>
+
+<tr>
+<td colspan="6" class="field-wrap">
+Address :
+<input onfocus="show(this,'Address – தற்போதைய தொடர்பு முகவரி')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td colspan="3" class="field-wrap">
+District :
+<input onfocus="show(this,'District – மாவட்டம்')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td colspan="3" class="field-wrap">
+State :
+<input onfocus="show(this,'State – மாநிலம்')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td colspan="3" class="field-wrap">
+PIN Code :
+<input onfocus="show(this,'PIN Code – அஞ்சல் குறியீடு')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td colspan="3" class="field-wrap">
+Contact Phone Number :
+<input onfocus="show(this,'Phone Number – தொடர்பு எண்')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<!-- SECTION 6 -->
+<tr>
+<td colspan="6"><b>6. Account Details (if payment desired through NEFT/RTGS/Other Credit)</b></td>
+</tr>
+
+<tr>
+<td colspan="3" align="center"><b>Bank Account Details</b></td>
+<td align="center"><b>OR</b></td>
+<td colspan="2" align="center"><b>Post Office Saving Bank Account Details</b></td>
+</tr>
+
+<tr>
+<td colspan="3" class="field-wrap">
+Account Number :
+<input onfocus="show(this,'Bank Account Number – வங்கி கணக்கு எண்')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td></td>
+<td colspan="2" class="field-wrap">
+Account Number :
+<input onfocus="show(this,'Post Office Account Number – அஞ்சலக கணக்கு எண்')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td colspan="3" class="field-wrap">
+Account Type :
+<input onfocus="show(this,'Account Type – Savings / Current')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td></td>
+<td colspan="2" class="field-wrap">
+Name of Account Holder :
+<input onfocus="show(this,'Account Holder – கணக்கு வைத்திருப்பவர் பெயர்')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td colspan="3" class="field-wrap">
+Name of Bank :
+<input onfocus="show(this,'Name of Bank – வங்கியின் பெயர்')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td></td>
+<td colspan="2" class="field-wrap">
+Post Office Name :
+<input onfocus="show(this,'Post Office Name – அஞ்சலகத்தின் பெயர்')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td colspan="3" class="field-wrap">
+Branch Name :
+<input onfocus="show(this,'Branch Name – வங்கி கிளை பெயர்')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td></td>
+<td colspan="2" class="field-wrap">
+CBS Post Office (Y/N) :
+<input onfocus="show(this,'CBS Post Office – Yes / No')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td colspan="3" class="field-wrap">
+IFSC code :
+<input onfocus="show(this,'IFSC Code – வங்கி குறியீடு')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td></td>
+<td colspan="2" class="field-wrap">
+Pin code / SOL ID :
+<input onfocus="show(this,'PIN / SOL ID – அஞ்சலக குறியீடு')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+<tr>
+<td colspan="3" class="field-wrap">
+Cancelled Cheque Enclosed (Y/N) :
+<input onfocus="show(this,'Cancelled Cheque – இணைத்துள்ளீர்களா?')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+<td></td>
+<td colspan="2" class="field-wrap">
+First page of Pass Book Enclosed (Y/N) :
+<input onfocus="show(this,'Passbook First Page – இணைத்துள்ளீர்களா?')" onblur="hide(this)">
+<div class="tooltip"></div>
+</td>
+</tr>
+
+</table>
+<!-- ADD THIS AT BOTTOM OF loan.html -->
+<div style="text-align:center;margin-top:20px;">
+  <button onclick="location.href='loan2.html'">
+    Next ▶ 
+  </button>
+</div>
+
+</div>
+
+<script>
+function show(input,text){
+  const tip = input.nextElementSibling;
+  tip.innerText = text;
+  tip.style.display = "block";
+}
+function hide(input){
+  const tip = input.nextElementSibling;
+  tip.style.display = "none";
+}
+</script>
+
+</body>
+</html>        

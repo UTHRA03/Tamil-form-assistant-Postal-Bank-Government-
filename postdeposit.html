@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SB-103 Pay-in Slip</title>
+<style>
+body{
+    font-family:"Times New Roman", serif;
+    background:#f2f2f2;
+}
+
+.page{
+    width:1100px;
+    margin:auto;
+    background:white;
+    border:2px solid black;
+    padding:8px;
+}
+
+.header{
+    text-align:center;
+    font-weight:bold;
+    font-size:18px;
+    margin-bottom:6px;
+}
+
+.row{
+    display:flex;
+}
+
+.section{
+    width:50%;
+    padding:8px;
+}
+
+.section.left{
+    border-right:2px dashed black;
+}
+
+.smallbox{
+    display:inline-block;
+    width:22px;
+    height:18px;
+    border:1px solid black;
+    position:relative;
+    cursor:pointer;
+}
+
+.accbox{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border:1px solid black;
+    margin-right:2px;
+    position:relative;
+    cursor:pointer;
+}
+
+.blank{
+    display:inline-block;
+    border-bottom:1px dotted black;
+    min-width:180px;
+    height:18px;
+    position:relative;
+    cursor:pointer;
+}
+
+.long{min-width:320px;}
+
+.tooltip{
+    display:none;
+    position:absolute;
+    top:22px;
+    left:0;
+    background:#fff8cc;
+    border:1px solid black;
+    padding:4px;
+    font-size:13px;
+    z-index:5;
+}
+
+.blank.active .tooltip,
+.smallbox.active .tooltip,
+.accbox.active .tooltip{
+    display:block;
+}
+
+.circle{
+    width:120px;
+    height:70px;
+    border:2px solid black;
+    border-radius:50%;
+    text-align:center;
+    line-height:70px;
+    margin-top:6px;
+}
+
+.signature{
+    border:2px solid black;
+    height:45px;
+    width:180px;
+    margin-top:6px;
+}
+
+h4{
+    margin:4px 0;
+    font-size:15px;
+}
+.back-btn-container{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.back-btn{
+  background-color: #ffcc00;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+  background-color: #e6b800;
+}
+.main-container {
+    width: 100%;
+}
+
+/* FORM AREA */
+.form-section {
+    width: 100%;
+}
+
+/* AUDIO SECTION FULL WIDTH */
+.audio-section {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* AUDIO BOX STYLE (Like Image 2) */
+.audio-box {
+    width: 90%;
+    padding: 25px;
+    background: #f3f3f3;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.audio-controls button {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    background: #e0e0e0;
+    cursor: pointer;
+}
+
+</style>
+
+<script>
+function showTip(el){
+    document.querySelectorAll('.blank,.smallbox,.accbox')
+    .forEach(e=>{ if(e!==el) e.classList.remove("active");});
+    el.classList.toggle("active");
+}
+</script>
+
+</head>
+<body>
+
+<div class="page">
+
+<div class="header">SB-103 — POST OFFICE SAVINGS BANK PAY-IN SLIP</div>
+
+<div class="row">
+
+<!-- LEFT SECTION -->
+<div class="section left">
+
+<h4>Counterfoil (for customer)</h4>
+
+Post Office:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">அஞ்சலகத்தின் பெயரை எழுதவும்</span>
+</span>
+
+&nbsp;&nbsp; Date:
+<span class="smallbox" onclick="showTip(this)"><span class="tooltip">நாள்</span></span>
+<span class="smallbox" onclick="showTip(this)"><span class="tooltip">மாதம்</span></span>
+<span class="smallbox" onclick="showTip(this)"><span class="tooltip">ஆண்டு</span></span>
+
+<br><br>
+
+Account Type:
+<input type="checkbox">SB
+<input type="checkbox">RD
+<input type="checkbox">TD
+<input type="checkbox">MIS
+<input type="checkbox">SCSS
+<input type="checkbox">PPF
+<input type="checkbox">SSA
+Others:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">மற்ற கணக்கு வகை</span>
+</span>
+
+<br><br>
+
+Account Number:<br>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+
+<br><br>
+
+Pay into credit of Mr./Mrs./Ms:
+<span class="blank long" onclick="showTip(this)">
+<span class="tooltip">பெயரை எழுதவும்</span>
+</span>
+
+<br><br>
+
+Rupees (in words):
+<span class="blank long" onclick="showTip(this)">
+<span class="tooltip">வார்த்தைகளில் தொகை</span>
+</span>
+
+<br><br>
+
+Bank Name / Cheque No:
+<span class="blank long" onclick="showTip(this)">
+<span class="tooltip">வங்கி அல்லது செக் விவரம்</span>
+</span>
+
+<br>
+
+<div class="circle">Date & Stamp</div>
+
+<div class="signature"></div>
+Initial of PA/SPM/GDS BPM
+
+</div>
+
+
+<!-- RIGHT SECTION -->
+<div class="section">
+
+<h4>Pay-in Slip (Office copy)</h4>
+
+Post Office:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">அஞ்சலகத்தின் பெயர்</span>
+</span>
+
+&nbsp;&nbsp; Transaction ID:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">பரிவர்த்தனை எண்</span>
+</span>
+
+<br><br>
+
+Account Number:<br>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+<span class="accbox" onclick="showTip(this)"><span class="tooltip">கணக்கு எண்</span></span>
+
+<br><br>
+
+Pay into credit of Mr./Mrs./Ms:
+<span class="blank long" onclick="showTip(this)">
+<span class="tooltip">பெயரை எழுதவும்</span>
+</span>
+
+<br><br>
+
+Rupees (in words):
+<span class="blank long" onclick="showTip(this)">
+<span class="tooltip">வார்த்தைகளில் தொகை</span>
+</span>
+
+<br><br>
+
+Loan / Deposit details:
+<span class="blank long" onclick="showTip(this)">
+<span class="tooltip">வைப்பு விவரங்கள்</span>
+</span>
+
+<br><br>
+
+<div class="signature"></div>
+Signature of Depositor
+
+</div>
+<h2>Audio 1: Purpose/நோக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio1')">⏪</button>
+        <button onclick="playPauseAudio('audio1')">▶️</button>
+        <button onclick="forwardAudio('audio1')">⏩</button>
+        <audio id="audio1" src="deposituse.mp3"></audio>
+    </div>
+
+    <h2>Audio 2: Explanation/விளக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio2')">⏪</button>
+        <button onclick="playPauseAudio('audio2')">▶️</button>
+        <button onclick="forwardAudio('audio2')">⏩</button>
+        <audio id="audio2" src="depositexp.mp3"></audio>
+    </div>
+</div>
+<div class="back-btn-container">
+  <button type="button" class="back-btn"
+          onclick="window.location.href='main.html'">
+    ⬅ Back to Home
+  </button>
+</div>
+
+</div>
+<script src="voice.js"></script>
+</body>
+</html>

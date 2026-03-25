@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tamil Form Assistant – Main</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MAIN SECTOR PAGE -->
+<div id="sectorPage" class="page app active">
+  <h2>துறை தேர்வு (Choose Sector)</h2>
+
+  <button onclick="openSector('post')">🏤 Post Office</button>
+  <button onclick="openSector('bank')">🏦 Bank</button>
+  <button onclick="openSector('govt')">🏛️ Government</button>
+</div>
+
+<!-- FORM LIST PAGE -->
+<div id="formPage" class="page app">
+  <h2 id="sectorTitle"></h2>
+  <div id="formList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

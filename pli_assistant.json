@@ -1,0 +1,58 @@
+{
+  "fields": {
+    "policyNo": {
+      "label_en": "Policy No.",
+      "label_ta": "காப்பீட்டு எண்",
+      "what": "ஏற்கனவே உள்ள PLI காப்பீட்டு எண்ணை பதிவு செய்யவும்",
+      "who": "விண்ணப்பதாரர் (புதிய காப்பீடு என்றால் அலுவலகம்)"
+    },
+    "name": {
+      "label_en": "Name",
+      "label_ta": "பெயர்",
+      "what": "ஆதார் / சேவை பதிவில் உள்ள முழுப் பெயரை எழுதவும்",
+      "who": "விண்ணப்பதாரர்"
+    },
+    "sumAssured": {
+      "label_en": "Sum Assured",
+      "label_ta": "உறுதி செய்யப்பட்ட காப்பீட்டு தொகை",
+      "what": "காப்பீடு முடிவில் வழங்கப்படும் மொத்த தொகை",
+      "who": "விண்ணப்பதாரர்"
+    },
+    "monthlyPremium": {
+      "label_en": "Monthly Premium (Excl. GST*)",
+      "label_ta": "மாத தவணை தொகை (GST தவிர்த்து)",
+      "what": "GST இல்லாமல் மாதம் செலுத்த வேண்டிய தொகை",
+      "who": "விண்ணப்பதாரர்"
+    },
+    "rank": {
+      "label_en": "Rank",
+      "label_ta": "பதவி / ரேங்க்",
+      "what": "பணியில் உள்ள பதவி விவரம்",
+      "who": "விண்ணப்பதாரர்"
+    },
+    "armyNo": {
+      "label_en": "Army No.",
+      "label_ta": "ராணுவ சேவை எண்",
+      "what": "அதிகாரப்பூர்வ ராணுவ சேவை எண்",
+      "who": "விண்ணப்பதாரர்"
+    },
+    "address": {
+      "label_en": "PAO / DDO / CDA Address",
+      "label_ta": "PAO / DDO / CDA அலுவலக முகவரி",
+      "what": "சம்பந்தப்பட்ட அலுவலகத்தின் முழு முகவரி",
+      "who": "விண்ணப்பதாரர்"
+    },
+    "deductionStart": {
+      "label_en": "Deduction Start Period (MM/YYYY)",
+      "label_ta": "தவணை பிடித்தம் தொடங்கும் காலம்",
+      "what": "தொடங்கும் மாதம் மற்றும் ஆண்டு",
+      "who": "விண்ணப்பதாரர்"
+    },
+    "deductionEnd": {
+      "label_en": "Deduction End Period (MM/YYYY)",
+      "label_ta": "தவணை பிடித்தம் முடியும் காலம்",
+      "what": "முடியும் மாதம் மற்றும் ஆண்டு",
+      "who": "விண்ணப்பதாரர்"
+    }
+  }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SBI Savings Bank Withdrawal Form</title>
+<link rel="stylesheet" href="voice.css">
+<style>
+body{
+    font-family: "Times New Roman", serif;
+    background:#eef1ff;
+}
+
+.form-box{
+    width:900px;
+    margin:20px auto;
+    background:#fff;
+    padding:20px;
+    border:2px solid #000080;
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.header h2{
+    margin:0;
+    text-align:center;
+    flex:1;
+    color:#000080;
+}
+
+.small{
+    font-size:14px;
+    color:#000080;
+}
+
+.row{
+    display:flex;
+    margin-top:12px;
+}
+
+.col{
+    flex:1;
+    padding:5px;
+}
+
+input[type="text"], input[type="date"]{
+    width:100%;
+    padding:5px;
+    border:1px solid #000080;
+}
+
+.account-box input{
+    width:30px;
+    text-align:center;
+    margin-right:3px;
+    border:1px solid #000080;
+}
+
+.tooltip{
+    position:relative;
+    cursor:pointer;
+}
+
+.tooltip .tip{
+    visibility:hidden;
+    background:#000080;
+    color:#fff;
+    padding:6px;
+    border-radius:5px;
+    position:absolute;
+    top:120%;
+    left:0;
+    width:260px;
+    font-size:13px;
+    z-index:1;
+}
+
+.tooltip:hover .tip{
+    visibility:visible;
+}
+
+.signature{
+    height:60px;
+    border-top:1px solid #000080;
+    margin-top:30px;
+    text-align:center;
+    padding-top:5px;
+    color:#000080;
+}
+
+hr{
+    border:1px solid #000080;
+}
+.back-btn-container{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.back-btn{
+    background-color: #ffcc00;
+    color: #000;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+    background-color: #e6b800;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+<div class="header">
+    <div class="small"><b>State Bank of India</b></div>
+    <h2>SAVINGS BANK WITHDRAWAL FORM<br>
+        <span class="small">வங்கி சேமிப்பு கணக்கு பணம் எடுத்தல் படிவம்</span>
+    </h2>
+    <div class="small tooltip">
+        Date
+        <input type="date">
+        <span class="tip">Enter today’s date<br>இன்றைய தேதியை உள்ளிடவும்</span>
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="col tooltip">
+        Name of the Account Holder(s)<br>
+        கணக்கு வைத்திருப்பவரின் பெயர்
+        <input type="text">
+        <span class="tip">Write full name as per passbook<br>பாஸ்புக்கில் உள்ள பெயரை எழுதவும்</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col tooltip">
+        Account Number / கணக்கு எண்
+        <div class="account-box">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+        </div>
+        <span class="tip">Enter correct SBI account number<br>சரியான கணக்கு எண்ணை எழுதவும்</span>
+    </div>
+</div>
+
+<p class="small">
+<b>NOTE:</b> This form is not a Cheque. Payment will be refused if passbook is not produced.<br>
+<b>குறிப்பு:</b> இது காசோலை அல்ல. பாஸ்புக் இல்லையெனில் பணம் வழங்கப்படாது.
+</p>
+
+<div class="row">
+    <div class="col tooltip">
+        Amount (₹) / தொகை
+        <input type="text">
+        <span class="tip">Enter amount in numbers<br>எண்ணாக தொகையை எழுதவும்</span>
+    </div>
+
+    <div class="col tooltip">
+        Amount in Words / எழுத்தில் தொகை
+        <input type="text">
+        <span class="tip">Write amount in words clearly<br>எழுத்துகளில் தெளிவாக எழுதவும்</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col tooltip">
+        <input type="checkbox"> Please pay self / எங்களுக்கு மட்டும் வழங்கவும்
+        <span class="tip">Tick if withdrawing for self<br>தனக்கு எடுத்தால் குறிக்கவும்</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col tooltip">
+        Scroll No / ஸ்க்ரோல் எண்
+        <input type="text">
+        <span class="tip">Filled by bank staff<br>வங்கி ஊழியர் நிரப்புவார்</span>
+    </div>
+
+    <div class="col tooltip">
+        Part No / பகுதி எண்
+        <input type="text">
+        <span class="tip">For official use only<br>அதிகாரபூர்வ பயன்பாடு</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col signature">
+        Passing Officer<br>
+        அனுமதிக்கும் அதிகாரி
+    </div>
+
+    <div class="col signature">
+        Signature of Account Holder<br>
+        கணக்கு வைத்திருப்பவரின் கையொப்பம்
+    </div>
+</div>
+<h2>Audio 1: Purpose/நோக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio1')">⏪</button>
+        <button onclick="playPauseAudio('audio1')">▶️</button>
+        <button onclick="forwardAudio('audio1')">⏩</button>
+        <audio id="audio1" src="wdbankuse.mp3"></audio>
+    </div>
+
+    <h2>Audio 2: Explanation/விளக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio2')">⏪</button>
+        <button onclick="playPauseAudio('audio2')">▶️</button>
+        <button onclick="forwardAudio('audio2')">⏩</button>
+        <audio id="audio2" src="wdbankexp.mp3"></audio>
+    </div>
+<div style="text-align:center; margin:20px 0;">
+        <button type="button" class="back-btn" onclick="window.location.href='main.html'">
+            ⬅ Back to Home
+        </button>
+</div>
+<script src="voice.js"></script>
+</body>
+</html>

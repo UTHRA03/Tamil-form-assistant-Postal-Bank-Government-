@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Acknowledgement Slip</title>
+<link rel="stylesheet" href="voice.css">
+<style>
+  .back-btn-container{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.back-btn{
+  background-color: #ffcc00;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+  background-color: #e6b800;
+}
+</style>
+</head>
+
+<body style="font-family:'Times New Roman';font-size:14px;">
+
+<h3 align="center">Acknowledgement Slip</h3>
+
+<p align="center">
+(To be filled by BPM / SPM / Post Master / CPC in-charge and Handed Over to Insurant)
+</p>
+
+<p>
+Loan Application for Policy No :
+__________
+&nbsp;&nbsp;
+received on :
+________
+</p>
+
+<p>
+with Service Request No :
+__________
+and following documents are received from the Insurant:
+</p>
+
+<h3>Documents Enclosed (Insurant)</h3>
+
+<table border="1" width="100%" cellpadding="6" cellspacing="0">
+<tr>
+<th>Sl.No</th>
+<th>Document</th>
+<th>Yes / No / NA</th>
+<th>Explanation (Tamil)</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td onclick="show('d1','Policy Bond – காப்பீட்டு பத்திரத்தின் சுய சான்றளிக்கப்பட்ட நகல்')">
+Self Attested copy of Policy Bond
+</td>
+<td><input type="text" onclick="show('d1','Yes / No / NA – பொருந்துவதை எழுதவும்')"></td>
+<td><span id="d1"></span></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td onclick="show('d2','Premium receipt / Credit document – பணம் செலுத்திய ரசீது அல்லது கடன் ஆவணம்')">
+Document(s) of Credit (if pay policy)<br>
+OR Premium receipt book (if cash policy)
+</td>
+<td><input type="text" onclick="show('d2','Yes / No / NA')"></td>
+<td><span id="d2"></span></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td onclick="show('d3','ID Proof – காப்பீடு பெற்ற நபரின் அடையாள அட்டை')">
+Self Attested copy of ID proof of the Insurant
+</td>
+<td><input type="text" onclick="show('d3','Yes / No / NA')"></td>
+<td><span id="d3"></span></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td onclick="show('d4','Address Proof – காப்பீடு பெற்ற நபரின் முகவரி சான்று')">
+Self Attested copy of address proof of the Insurant
+</td>
+<td><input type="text" onclick="show('d4','Yes / No / NA')"></td>
+<td><span id="d4"></span></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td onclick="show('d5','Loan repayment receipt – கடன் திருப்பிச் செலுத்திய ரசீது புத்தகம்')">
+Loan Repayment receipt Book
+</td>
+<td><input type="text" onclick="show('d5','Yes / No / NA')"></td>
+<td><span id="d5"></span></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td onclick="show('d6','Cancelled cheque / POSB passbook – வங்கி அல்லது அஞ்சலக கணக்கு ஆதாரம்')">
+Cancelled Cheque / POSB Passbook First Page
+</td>
+<td><input type="text" onclick="show('d6','Yes / No / NA')"></td>
+<td><span id="d6"></span></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td onclick="show('d7','Messenger ID & Address proof – பிரதிநிதியின் அடையாள & முகவரி சான்று')">
+ID & Address proof of Messenger
+</td>
+<td><input type="text" onclick="show('d7','Yes / No / NA')"></td>
+<td><span id="d7"></span></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td onclick="show('d8','Medical certificate / Passport – மருத்துவ சான்று அல்லது பாஸ்போர்ட் நகல்')">
+Medical certificate from Govt Hospital<br>
+OR Passport copy (departure date)
+</td>
+<td><input type="text" onclick="show('d8','Yes / No / NA')"></td>
+<td><span id="d8"></span></td>
+</tr>
+
+<tr>
+<td>9</td>
+<td onclick="show('d9','Any other document – கூடுதல் ஆவணங்கள் இருந்தால் குறிப்பிடவும்')">
+Any other document(s), pls specify
+</td>
+<td><input type="text" onclick="show('d9','Yes / No / NA')"></td>
+<td><span id="d9"></span></td>
+</tr>
+</table>
+
+<br>
+
+<p>
+Date :
+<input type="text" onclick="show('dt','Date – தேதி')">
+<span id="dt"></span>
+</p>
+
+<p>
+Signature of BPM / SPM / PM / CPC In-Charge :
+<input type="text" onclick="show('sig','Officer Signature – அலுவலர் கையொப்பம்')">
+<span id="sig"></span>
+</p>
+
+<p>
+Name :
+<input type="text" onclick="show('of3','Officer Name – அலுவலரின் பெயர்')">
+<span id="of3"></span>
+</p>
+
+<p>
+Designation :
+<input type="text" onclick="show('of4','Designation – பதவி')">
+<span id="of4"></span>
+</p>
+
+<p>Office Stamp :</p>
+<h2>Audio 1: Purpose/நோக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio1')">⏪</button>
+        <button onclick="playPauseAudio('audio1')">▶️</button>
+        <button onclick="forwardAudio('audio1')">⏩</button>
+        <audio id="audio1" src="loanuse.ogg"></audio>
+    </div>
+
+    <h2>Audio 2: Explanation/விளக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio2')">⏪</button>
+        <button onclick="playPauseAudio('audio2')">▶️</button>
+        <button onclick="forwardAudio('audio2')">⏩</button>
+        <audio id="audio2" src="loanexp.ogg"></audio>
+    </div>
+
+<!-- ADD THIS AT BOTTOM OF loan3.html -->
+<div style="text-align:center;margin-top:20px;">
+  <button onclick="location.href='loan2.html'">
+    ◀ Previous 
+  </button>
+
+  <button onclick="location.href='loan.html'">
+    ⏮ Back to Loan Form
+  </button>
+</div>
+<div class="back-btn-container">
+  <button type="button" class="back-btn"
+          onclick="window.location.href='main.html'">
+    ⬅ Back to Home
+  </button>
+</div>
+<script src="voice.js"></script>
+<script>
+function show(id, text) {
+  document.getElementById(id).innerHTML =
+    "<span style='background:#e6f4ff;border:1px solid #3399ff;padding:4px;'>👉 " + text + "</span>";
+}
+</script>
+
+</body>
+</html>

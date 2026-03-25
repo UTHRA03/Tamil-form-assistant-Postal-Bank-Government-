@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FORM 4 - Page 2</title>
+<link rel="stylesheet" href="voice.css">
+<style>
+body{
+    font-family:"Times New Roman", serif;
+    background:#f2f2f2;
+}
+
+.form-container{
+    width:850px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border:1px solid black;
+}
+
+p{
+    margin:8px 0;
+}
+
+.line-input{
+    border:none;
+    border-bottom:1px solid black;
+    width:100%;
+    outline:none;
+    font-family:"Times New Roman", serif;
+}
+
+.tooltip{
+    display:none;
+    background:#ffffcc;
+    border:1px solid #999;
+    padding:5px;
+    font-size:13px;
+    margin-bottom:8px;
+}
+.back-btn-container{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.back-btn{
+  background-color: #ffcc00;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+  background-color: #e6b800;
+}
+
+</style>
+
+<script>
+function showTip(id){
+    document.getElementById(id).style.display="block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="form-container">
+
+<p>15. Have you been disqualified for obtaining a licence to drive? If so, for what reasons?</p>
+<input class="line-input" onclick="showTip('tip15')">
+<div id="tip15" class="tooltip">
+Write Yes or No and give reason if applicable.<br>
+ஆம் அல்லது இல்லை என்று எழுதவும்; இருந்தால் காரணத்தை குறிப்பிடவும்.
+</div>
+
+<p>16. Have you been subject to a driving test as to your fitness or ability to drive a vehicle?</p>
+<input class="line-input" onclick="showTip('tip16')">
+<div id="tip16" class="tooltip">
+Mention details of any driving test taken.<br>
+ஓட்டுநர் தேர்வு எழுதியிருந்தால் விவரங்களை குறிப்பிடவும்.
+</div>
+
+<p>Date of Test</p>
+<input class="line-input" onclick="showTip('tip17')">
+<div id="tip17" class="tooltip">
+Enter date of driving test.<br>
+ஓட்டுநர் தேர்வு தேதியை எழுதவும்.
+</div>
+
+<p>Testing Authority</p>
+<input class="line-input" onclick="showTip('tip18')">
+<div id="tip18" class="tooltip">
+Enter name of testing authority.<br>
+தேர்வு நடத்திய அதிகாரியின் பெயரை எழுதவும்.
+</div>
+
+<p>Result of Test</p>
+<input class="line-input" onclick="showTip('tip19')">
+<div id="tip19" class="tooltip">
+Write Pass or Fail.<br>
+தேர்ச்சி அல்லது தோல்வி என்று எழுதவும்.
+</div>
+
+<p>17. I enclose three copies of my recent Passport size photograph</p>
+
+<p>18. I enclose the learner’s licence No.</p>
+<input class="line-input" onclick="showTip('tip20')">
+<div id="tip20" class="tooltip">
+Enter learner licence number.<br>
+லெர்னர் லைசன்ஸ் எண்ணை எழுதவும்.
+</div>
+
+<p>Licensing Authority</p>
+<input class="line-input" onclick="showTip('tip21')">
+<div id="tip21" class="tooltip">
+Enter licensing authority name.<br>
+லைசன்சிங் அதிகாரியின் பெயரை எழுதவும்.
+</div>
+
+<p>19. I enclose the Driving Certificate No.</p>
+<input class="line-input" onclick="showTip('tip22')">
+<div id="tip22" class="tooltip">
+Enter driving certificate number.<br>
+ஓட்டுநர் சான்றிதழ் எண்ணை எழுதவும்.
+</div>
+
+<p>20. Written consent of parent/guardian (if applicable)</p>
+<input class="line-input" onclick="showTip('tip23')">
+<div id="tip23" class="tooltip">
+If minor, parent consent required.<br>
+சிறாராக இருந்தால் பெற்றோர் அனுமதி அவசியம்.
+</div>
+
+<p>21. Medical fitness certificate enclosed</p>
+<input class="line-input" onclick="showTip('tip24')">
+<div id="tip24" class="tooltip">
+Write Yes or No.<br>
+ஆம் அல்லது இல்லை என்று எழுதவும்.
+</div>
+
+<p>22. Exempted from medical test under rules</p>
+<input class="line-input" onclick="showTip('tip25')">
+<div id="tip25" class="tooltip">
+Mention exemption if applicable.<br>
+விலக்கு இருந்தால் குறிப்பிடவும்.
+</div>
+
+<p>24. I have paid the fee of Rs.</p>
+<input class="line-input" onclick="showTip('tip26')">
+<div id="tip26" class="tooltip">
+Enter amount paid.<br>
+செலுத்திய தொகையை எழுதவும்.
+</div>
+
+<br><br>
+
+<p>Date:</p>
+<input class="line-input" onclick="showTip('tip27')">
+<div id="tip27" class="tooltip">
+Enter application date.<br>
+விண்ணப்ப தேதி எழுதவும்.
+</div>
+
+<p>Signature / Thumb Impression</p>
+<input class="line-input" onclick="showTip('tip28')">
+<div id="tip28" class="tooltip">
+Applicant signature or thumb impression.<br>
+விண்ணப்பதாரர் கையொப்பம் அல்லது விரல் முத்திரை.
+</div>
+
+<br><br>
+    <h2>Audio 1: Purpose/நோக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio1')">⏪</button>
+        <button onclick="playPauseAudio('audio1')">▶️</button>
+        <button onclick="forwardAudio('audio1')">⏩</button>
+        <audio id="audio1" src="licuse.ogg"></audio>
+    </div>
+
+    <h2>Audio 2: Explanation/விளக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio2')">⏪</button>
+        <button onclick="playPauseAudio('audio2')">▶️</button>
+        <button onclick="forwardAudio('audio2')">⏩</button>
+        <audio id="audio2" src="licexp.ogg"></audio>
+    </div>
+
+<div style="text-align:center; margin-top:20px;">
+    <button onclick="window.location.href='license.html'"
+            style="padding:10px 20px; font-size:16px; cursor:pointer;">
+        ⬅ Previous Page
+    </button>
+</div>
+<div class="back-btn-container">
+  <button type="button" class="back-btn"
+          onclick="window.location.href='main.html'">
+    ⬅ Back to Home
+  </button>
+</div>
+
+</div>
+<script src="voice.js"></script>
+</body>
+</html>

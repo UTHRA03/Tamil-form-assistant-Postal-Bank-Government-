@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<title>Account Opening Form – Page 4</title>
+<link rel="stylesheet" href="voice.css">
+<style>
+body{
+    font-family:"Times New Roman", serif;
+    background:#eef6ff;
+}
+.form{
+    width:1100px;
+    margin:20px auto;
+    background:white;
+    border:2px solid #5aa9ff;
+    padding:15px;
+}
+h3{
+    color:#5aa9ff;
+}
+p{
+    font-size:15px;
+    line-height:1.4;
+}
+.signature-box{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+.signature-box td{
+    border:1px solid #5aa9ff;
+    height:100px;
+    vertical-align:top;
+    padding:8px;
+}
+#instructionBox{
+    margin:15px 0;
+    padding:10px;
+    border:2px solid #5aa9ff;
+    background:#f4faff;
+    color:#003366;
+    font-weight:bold;
+}
+.footer{
+    text-align:right;
+    margin-top:20px;
+    color:#5aa9ff;
+}
+.back-btn-container{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.back-btn{
+  background-color: #ffcc00;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+  background-color: #e6b800;
+}
+</style>
+
+<script>
+function showInstruction(text){
+    document.getElementById("instructionBox").innerText = text;
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="form">
+
+<h3>
+4. வணிக விதிமுறைகள் இணைப்பு  
+/ Incorporation of the Business Conditions
+</h3>
+
+<div id="instructionBox">
+பகுதியை கிளிக் செய்தால் விளக்கம் இங்கே தோன்றும்.
+</div>
+
+<p onclick="showInstruction('வங்கி பொதுவான விதிமுறைகள் மற்றும் சிறப்பு விதிமுறைகள் பற்றிய தகவல். படித்து புரிந்து கொள்ளவும்.')">
+The business relationship shall be governed by the General Business Conditions of the Bank. 
+In addition, specific business relations shall be governed by Special Conditions deviating 
+from or supplementing these General Business Conditions.
+<br><br>
+வங்கி பொதுவான விதிமுறைகள் மற்றும் சிறப்பு விதிமுறைகள் படி கணக்கு செயல்படும்.
+</p>
+
+<table class="signature-box">
+<tr>
+<td onclick="showInstruction('இங்கு பாதுகாவலரின் இடம், தேதி மற்றும் கையொப்பம் இட வேண்டும்.')">
+Place, date, signature of legal representative(s)  
+<br><br>
+இடம், தேதி, பாதுகாவலர் கையொப்பம்
+</td>
+
+<td onclick="showInstruction('இங்கு சிறுவனின் இடம், தேதி மற்றும் கையொப்பம் இட வேண்டும்.')">
+Place, date, signature of minor  
+<br><br>
+இடம், தேதி, சிறுவன்/சிறுமி கையொப்பம்
+</td>
+</tr>
+</table>
+
+<br>
+
+<p onclick="showInstruction('தனிப்பட்ட தகவல்கள் வங்கியால் பாதுகாப்பாக பராமரிக்கப்படும்.')">
+<b>Data protection notice:</b><br>
+The Bank shall process and use the personal data collected from you also for advertising,
+market research or opinion polling purposes.
+<br><br>
+வங்கி சேகரிக்கும் தனிப்பட்ட தகவல்கள் பாதுகாப்பாக பராமரிக்கப்படும்.
+</p>
+<h2>Audio 1: Purpose/நோக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio1')">⏪</button>
+        <button onclick="playPauseAudio('audio1')">▶️</button>
+        <button onclick="forwardAudio('audio1')">⏩</button>
+        <audio id="audio1" src="acuse.ogg"></audio>
+    </div>
+
+    <h2>Audio 2: Explanation/விளக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio2')">⏪</button>
+        <button onclick="playPauseAudio('audio2')">▶️</button>
+        <button onclick="forwardAudio('audio2')">⏩</button>
+        <audio id="audio2" src="acexp.ogg"></audio>
+    </div>
+<div class="footer">Page 4</div>
+<div class="button-area">
+  <button onclick="location.href='sbisavings1.html'">
+    ◀ Previous
+  </button>
+
+  <button type="button" class="back-btn"
+          onclick="window.location.href='main.html'">
+    ⬅ Back to Home
+  </button>
+</div>
+</div>
+<script src="voice.js"></script>
+</body>
+</html>

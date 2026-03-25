@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tamil Form Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- SPLASH PAGE -->
+<div id="splashPage" class="page splash active">
+    <img src="front page.jpeg" alt="Splash Screen">
+</div>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage" class="page app">
+    <h2>Login (உள்நுழைவு)</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button onclick="goTo('sectorPage')">Login</button>
+</div>
+
+<!-- SECTOR PAGE -->
+<div id="sectorPage" class="page app">
+    <h2>துறை தேர்வு (Choose Sector)</h2>
+
+    <button onclick="openSector('post')">
+        🏤 Post Office<br>அஞ்சலகம்
+    </button>
+
+    <button onclick="openSector('bank')">
+        🏦 Bank<br>வங்கி
+    </button>
+
+    <button onclick="openSector('govt')">
+        🏛️ Government<br>அரசுத் துறை
+    </button>
+</div>
+
+<!-- FORM LIST PAGE -->
+<div id="formPage" class="page app">
+    <h2 id="sectorTitle"></h2>
+    <div id="formList"></div>
+
+    <!-- ✅ FINAL CHECK BACK BUTTON -->
+    <button class="back-btn" onclick="goTo('sectorPage')">⬅ Back</button>
+</div>
+
+<!-- GUIDANCE PAGE -->
+<div id="guidePage" class="page app">
+    <h2 id="formTitle"></h2>
+    <div id="guideContent"></div>
+
+    <p class="note">
+        ⚠️ இந்த செயலி படிவங்களை நிரப்பாது. வழிகாட்டுதலுக்காக மட்டுமே.
+    </p>
+
+    <!-- ✅ FINAL CHECK BACK BUTTON -->
+    <button class="back-btn" onclick="goTo('formPage')">⬅ Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

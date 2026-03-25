@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SB-7 Withdrawal Form</title>
+<link rel="stylesheet" href="voice.css">
+<style>
+body{
+    font-family:"Times New Roman", serif;
+    background:#f2f2f2;
+}
+
+.container{
+    width:1100px;
+    margin:20px auto;
+    background:white;
+    border:2px solid black;
+    padding:10px;
+}
+
+.title{
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.row{ margin:6px 0; }
+
+.blank{
+    display:inline-block;
+    border-bottom:1px dotted black;
+    min-width:180px;
+    height:18px;
+    cursor:pointer;
+    position:relative;
+}
+
+.long{ min-width:350px; }
+
+.smallbox{
+    display:inline-block;
+    width:22px;
+    height:18px;
+    border:1px solid black;
+    cursor:pointer;
+    position:relative;
+}
+
+.tooltip{
+    display:none;
+    position:absolute;
+    background:#fff8dc;
+    border:1px solid black;
+    padding:4px;
+    font-size:13px;
+    top:22px;
+    left:0;
+    z-index:10;
+}
+
+.blank.active .tooltip,
+.smallbox.active .tooltip{
+    display:block;
+}
+
+.column{
+    width:49%;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.section-title{
+    font-weight:bold;
+    margin:8px 0;
+}
+
+hr{ border:1px solid black; }
+.back-btn-container{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.back-btn{
+  background-color: #ffcc00;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+  background-color: #e6b800;
+}
+
+</style>
+
+<script>
+function showTip(el){
+  document.querySelectorAll('.blank, .smallbox').forEach(e=>{
+    if(e!==el) e.classList.remove('active');
+  });
+  el.classList.toggle("active");
+}
+
+</script>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="title">SB-7 &nbsp;&nbsp;&nbsp; WITHDRAWAL FORM</div>
+
+<div class="column">
+
+<div class="section-title">Application Side (To be filled by depositor)</div>
+
+<div class="row">
+Name of the Post Office:
+<span class="blank long" onclick="showTip(this)">
+<span class="tooltip">அஞ்சலகத்தின் பெயரை எழுதவும்</span>
+</span>
+
+&nbsp; Date:
+<span class="smallbox" onclick="showTip(this)"><span class="tooltip">நாள்</span></span>
+<span class="smallbox" onclick="showTip(this)"><span class="tooltip">மாதம்</span></span>
+<span class="smallbox" onclick="showTip(this)"><span class="tooltip">ஆண்டு</span></span>
+</div>
+
+<div class="row">
+Type of Account :
+<input type="checkbox"> SB
+<input type="checkbox"> TD
+<input type="checkbox"> MIS
+<input type="checkbox"> SCSS
+<input type="checkbox"> NSS
+Others:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">மற்ற கணக்கு வகை இருந்தால் எழுதவும்</span>
+</span>
+</div>
+
+<div class="row">
+Account No:
+<span class="blank long" onclick="showTip(this)">
+<span class="tooltip">கணக்கு எண்ணை எழுதவும்</span>
+</span>
+</div>
+
+<div class="row">
+NATURE OF PAYMENT :
+<input type="checkbox"> Interest
+<input type="checkbox"> Withdrawal
+</div>
+
+<div class="row">
+Please pay to me / messenger the sum of ₹
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">எண்களில் தொகை எழுதவும்</span>
+</span>
+(In figures) ₹
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">வார்த்தைகளில் தொகை எழுதவும்</span>
+</span>
+(In words)
+</div>
+
+<div class="row">
+Balance after withdrawal ₹
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">பின்பற்றிய இருப்புத் தொகை</span>
+</span>
+</div>
+
+<div class="row">
+Signature or thumb impression of account holder(s)/guardian
+<span class="blank long" onclick="showTip(this)">
+<span class="tooltip">கணக்கு வைத்திருப்பவரின் கையொப்பம் அல்லது விரல் ரேகை</span>
+</span>
+</div>
+
+<div class="row">
+Name of Messenger:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">மெசஞ்சர் பெயர்</span>
+</span>
+</div>
+
+<div class="row">
+Signature of Messenger:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">மெசஞ்சர் கையொப்பம்</span>
+</span>
+</div>
+
+<div class="row">
+<b>Note:- Aadhaar Seeding required for availing DBT benefits in POSB A/C</b>
+<input type="checkbox">
+</div>
+
+<div class="row">
+Initial of PA:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">PA ஆரம்ப எழுத்து</span>
+</span>
+
+&nbsp;&nbsp; Initial of APM/SPM:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">APM/SPM ஆரம்ப எழுத்து</span>
+</span>
+</div>
+
+</div>
+
+
+<div class="column">
+
+<div class="section-title">PAYMENT ORDER (For office use only)</div>
+
+<div class="row">
+Date:
+<span class="smallbox" onclick="showTip(this)">
+<span class="tooltip">தேதி</span>
+</span>
+Transaction ID:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">பரிவர்த்தனை எண்</span>
+</span>
+</div>
+
+<div class="row">
+Pay ₹
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">செலுத்த வேண்டிய தொகை</span>
+</span>
+(In figures) Rupees
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">வார்த்தைகளில் தொகை</span>
+</span>
+(in words)
+</div>
+
+<div class="row">
+Date Stamp:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">அஞ்சலக முத்திரை இடப்படும் இடம்</span>
+</span>
+</div>
+
+<div class="row">
+Signature of Postmaster:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">போஸ்ட் மாஸ்டர் கையொப்பம்</span>
+</span>
+</div>
+
+<hr>
+
+<div class="section-title">ACQUITTANCE (to be filled by depositor/messenger)</div>
+
+<div class="row">
+Received ₹
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">பெற்ற தொகை</span>
+</span>
+(In figures) Rupees
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">வார்த்தைகளில் தொகை</span>
+</span>
+</div>
+
+<div class="row">
+Date:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">பெற்ற தேதி</span>
+</span>
+</div>
+
+<div class="row">
+Mobile No:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">மொபைல் எண்</span>
+</span>
+PAN No:
+<span class="blank" onclick="showTip(this)">
+<span class="tooltip">PAN எண் (தேவைப்பட்டால்)</span>
+</span>
+</div>
+
+<div class="row">
+Signature or thumb impression:
+<span class="blank long" onclick="showTip(this)">
+<span class="tooltip">கையொப்பம் அல்லது விரல் ரேகை</span>
+</span>
+</div>
+
+</div>
+
+</div>
+<h2>Audio 1: Purpose/நோக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio1')">⏪</button>
+        <button onclick="playPauseAudio('audio1')">▶️</button>
+        <button onclick="forwardAudio('audio1')">⏩</button>
+        <audio id="audio1" src="wduse.mp3"></audio>
+    </div>
+
+    <h2>Audio 2: Explanation/விளக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio2')">⏪</button>
+        <button onclick="playPauseAudio('audio2')">▶️</button>
+        <button onclick="forwardAudio('audio2')">⏩</button>
+        <audio id="audio2" src="wdexp.mp3"></audio>
+    </div>
+<div class="back-btn-container">
+  <button type="button" class="back-btn"
+          onclick="window.location.href='main.html'">
+    ⬅ Back to Home
+  </button>
+</div>
+
+<script src="voice.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FORM 4 - Driving Licence</title>
+
+<style>
+body{
+    font-family:"Times New Roman", serif;
+    background:#f2f2f2;
+}
+
+.form-container{
+    width:850px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border:1px solid black;
+}
+
+h3{
+    text-align:center;
+    margin:2px;
+}
+
+p{
+    margin:6px 0;
+}
+
+.line-input{
+    border:none;
+    border-bottom:1px solid black;
+    width:100%;
+    outline:none;
+    font-family:"Times New Roman", serif;
+    font-size:14px;
+}
+
+.tooltip{
+    display:none;
+    background:#ffffcc;
+    border:1px solid #999;
+    padding:5px;
+    font-size:13px;
+    margin-bottom:8px;
+}
+
+.photo-box{
+    float:right;
+    width:140px;
+    height:160px;
+    border:1px solid black;
+    text-align:center;
+    font-size:12px;
+    padding-top:60px;
+}
+
+.clear{clear:both;}
+.back-btn-container{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.back-btn{
+  background-color: #ffcc00;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+  background-color: #e6b800;
+}
+</style>
+
+<script>
+function showTip(id){
+    document.getElementById(id).style.display="block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="form-container">
+
+<h3>FORM – 4</h3>
+<h3>[See Rule 14 (1)]</h3>
+<h3>FORM OF APPLICANT FOR LICENCE TO DRIVE A MOTOR VEHICLE</h3>
+
+<div class="photo-box">
+Space for Passport size photograph
+</div>
+
+<p>To</p>
+<input class="line-input" onclick="showTip('tip1')">
+<div id="tip1" class="tooltip">
+Enter Licensing Authority name.<br>
+லைசன்சிங் அதிகாரியின் பெயரை எழுதவும்.
+</div>
+
+<p>I apply for a licence to enable me to drive vehicles of the following description:</p>
+
+<p>a) Motor Cycle without gear (கியர் இல்லாத மோட்டார் சைக்கிள்)</p>
+<p>b) Motor Cycle with gear (கியர் உள்ள மோட்டார் சைக்கிள்)</p>
+<p>c) Invalid carriage (செல்லாத வண்டி (ஊனமுற்றோருக்கான வாகனம்)</p>
+<p>d) Light Motor Vehicle (இலகுரக மோட்டார் வாகனம்)</p>
+<p>e) Transport Vehicle (போக்குவரத்து வாகனம்)</p>
+<p>f) Road Roller (சாலை உருளை)</p>
+<p>g) Motor vehicle of the following description (பின்வரும் விளக்கங்களைக் கொண்ட மோட்டார் வாகனம்)</p>
+
+<input class="line-input" onclick="showTip('tip2')">
+<div id="tip2" class="tooltip">
+Specify vehicle type if selecting option (g).<br>
+(g) தேர்வு செய்தால் வாகன வகையை குறிப்பிடவும்.
+</div>
+
+<h3>PARTICULARS TO BE FURNISHED BY THE APPLICANT</h3>
+
+<p>1. Full Name:</p>
+<input class="line-input" onclick="showTip('tip3')">
+<div id="tip3" class="tooltip">
+Enter your full name as per records.<br>
+அதிகாரப்பூர்வ பதிவுகளின் படி உங்கள் முழுப் பெயரை எழுதவும்.
+</div>
+
+<p>2. Son / Wife / Daughter of:</p>
+<input class="line-input" onclick="showTip('tip4')">
+<div id="tip4" class="tooltip">
+Enter father or husband name.<br>
+தந்தை அல்லது கணவர் பெயரை எழுதவும்.
+</div>
+
+<p>3. Permanent address:</p>
+<input class="line-input" onclick="showTip('tip5')">
+<div id="tip5" class="tooltip">
+Enter permanent residential address.<br>
+உங்கள் நிரந்தர முகவரியை எழுதவும்.
+</div>
+
+<p>4. Temporary address / Official address, if any:</p>
+<input class="line-input" onclick="showTip('tip6')">
+<div id="tip6" class="tooltip">
+Enter present address if different.<br>
+வேறுபட்டால் தற்போதைய முகவரியை எழுதவும்.
+</div>
+
+<p>5. Duration of stay at present address:</p>
+<input class="line-input" onclick="showTip('tip7')">
+<div id="tip7" class="tooltip">
+Mention how long you have stayed.<br>
+எவ்வளவு காலமாக வசிக்கிறீர்கள் என்பதை குறிப்பிடவும்.
+</div>
+
+<p>6. Date of Birth:</p>
+<input type="date" class="line-input" onclick="showTip('tip8')">
+<div id="tip8" class="tooltip">
+Select date of birth as per certificate.<br>
+சான்றிதழின் படி பிறந்த தேதியை தேர்வு செய்யவும்.
+</div>
+
+<p>7. Place of birth:</p>
+<input class="line-input" onclick="showTip('tip9')">
+<div id="tip9" class="tooltip">
+Enter town and district of birth.<br>
+பிறந்த ஊர் மற்றும் மாவட்டத்தை எழுதவும்.
+</div>
+
+<p>8. Educational Qualification:</p>
+<input class="line-input" onclick="showTip('tip10')">
+<div id="tip10" class="tooltip">
+Enter highest qualification completed.<br>
+உங்கள் உயர்ந்த கல்வித் தகுதியை எழுதவும்.
+</div>
+
+<p>9. Identification Marks (1)</p>
+<input class="line-input" onclick="showTip('tip11')">
+<div id="tip11" class="tooltip">
+Example: Mole, scar, birthmark.<br>
+உதாரணம்: மச்சம், சிராய், பிறவிக் குறி.
+</div>
+
+<p>(2)</p>
+<input class="line-input" onclick="showTip('tip12')">
+<div id="tip12" class="tooltip">
+Enter another identification mark.<br>
+மற்றொரு அடையாளக் குறியை எழுதவும்.
+</div>
+
+<p>12. Blood Group (Rh):</p>
+<input class="line-input" onclick="showTip('tip13')">
+<div id="tip13" class="tooltip">
+Enter blood group if known.<br>
+உங்கள் இரத்த வகையை எழுதவும்.
+</div>
+
+<p>13. Have you previously held driving licence? If so, give details:</p>
+<input class="line-input" onclick="showTip('tip14')">
+<div id="tip14" class="tooltip">
+Write Yes or No and give licence details.<br>
+ஆம் அல்லது இல்லை என்று எழுதவும் மற்றும் விவரங்களை வழங்கவும்.
+</div>
+
+<p>14. Particulars of any conviction:</p>
+<input class="line-input" onclick="showTip('tip15')">
+<div id="tip15" class="tooltip">
+Mention violations or write NIL.<br>
+மீறல்கள் இருந்தால் குறிப்பிடவும் அல்லது NIL என்று எழுதவும்.
+</div>
+<br><br>
+<p>Date: _____________________</p>
+<p>Signature of Applicant: _____________________</p>
+
+<br><br>
+
+<div style="text-align:center;">
+    <button onclick="window.location.href='dl2.html'" 
+            style="padding:8px 18px; font-size:14px; cursor:pointer;">
+        Next
+    </button>
+</div>
+
+<div class="clear"></div>
+
+</div>
+
+</body>
+</html>

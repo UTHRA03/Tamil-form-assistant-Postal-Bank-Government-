@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PLI Tamil Assistant Form</title>
+<link rel="stylesheet" href="voice.css">
+<style>
+body{
+  font-family:"Times New Roman", serif;
+  background:#f2f2f2;
+}
+.form-box{
+  width:900px;
+  margin:20px auto;
+  background:#fff;
+  padding:20px;
+  border:2px solid #000;
+}
+h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+td{
+  border:1px solid #000;
+  padding:6px;
+  vertical-align:top;
+}
+.label{
+  width:220px;
+  font-weight:bold;
+}
+input, textarea{
+  width:100%;
+  border:none;
+  outline:none;
+  font-size:14px;
+}
+textarea{ height:60px; }
+
+.help{
+  display:none;
+  margin-top:6px;
+  padding:6px;
+  background:#eef6ff;
+  border-left:4px solid #1e73ff;
+  font-size:13px;
+}
+.small{ text-align:center; }
+
+.back-btn-container{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.back-btn{
+  background-color: #ffcc00;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+  background-color: #e6b800;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h2>Consent form for Defence Services Personnel for payment of Postal Life Insurance (PLI) renewal Premium through their Pay Recovery mode.</h2>
+
+<table>
+
+<tr>
+<td class="label">Policy No.<br>(காப்பீட்டு எண்)</td>
+<td colspan="3">
+<input onfocus="show('policy')">
+<div id="policy" class="help">
+<b>English:</b> Policy Number<br>
+<b>தமிழ்:</b> காப்பீட்டு எண்<br>
+<b>விளக்கம்:</b> இந்த PLI காப்பீட்டிற்கு வழங்கப்பட்ட தனிப்பட்ட அடையாள எண்.
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label">Name<br>(பெயர்)</td>
+<td colspan="3">
+<input onfocus="show('name')">
+<div id="name" class="help">
+<b>English:</b> Name of Insurant<br>
+<b>தமிழ்:</b> காப்பீட்டாளர் பெயர்<br>
+<b>விளக்கம்:</b> ஆதார் அல்லது சேவை பதிவில் உள்ள முழுப் பெயர்.
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label">Sum Assured<br>(காப்பீட்டு தொகை)</td>
+<td>
+<input onfocus="show('sum')">
+<div id="sum" class="help">
+<b>English:</b> Sum Assured<br>
+<b>தமிழ்:</b> உறுதி செய்யப்பட்ட காப்பீட்டு தொகை<br>
+<b>விளக்கம்:</b> காப்பீடு முடிவில் வழங்கப்படும் தொகை.
+</div>
+</td>
+
+<td class="label">Monthly Premium (Excl. GST)<br>(மாத தவணை)</td>
+<td>
+<input onfocus="show('premium')">
+<div id="premium" class="help">
+<b>English:</b> Monthly Premium<br>
+<b>தமிழ்:</b> மாத தவணை தொகை (GST தவிர்த்து)<br>
+<b>விளக்கம்:</b> மாதம் சம்பளத்திலிருந்து பிடித்தம் செய்யப்படும் தொகை.
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label">Rank<br>(பதவி)</td>
+<td colspan="3">
+<input onfocus="show('rank')">
+<div id="rank" class="help">
+<b>English:</b> Rank / Designation<br>
+<b>தமிழ்:</b> பதவி / ரேங்க்
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label">Army No.<br>(சேவை எண்)</td>
+<td colspan="3">
+<input onfocus="show('army')">
+<div id="army" class="help">
+<b>English:</b> Army / Service Number<br>
+<b>தமிழ்:</b> ராணுவ சேவை எண்
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label">PAO / DDO / CDA Address<br>(அலுவலக முகவரி)</td>
+<td colspan="3">
+<textarea onfocus="show('address')"></textarea>
+<div id="address" class="help">
+<b>English:</b> PAO / DDO / CDA Address<br>
+<b>தமிழ்:</b> சம்பள கணக்கு அலுவலக முகவரி
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label">Deduction Start Period<br>(தொடக்க காலம்)</td>
+<td class="small">
+<input placeholder="MM YYYY" onfocus="show('start')">
+<div id="start" class="help">
+<b>English:</b> Deduction Start Period<br>
+<b>தமிழ்:</b> தவணை தொடங்கும் மாதம் / ஆண்டு
+</div>
+</td>
+
+<td class="label">Deduction End Period<br>(முடிவு காலம்)</td>
+<td class="small">
+<input placeholder="MM YYYY" onfocus="show('end')">
+<div id="end" class="help">
+<b>English:</b> Deduction End Period<br>
+<b>தமிழ்:</b> தவணை முடியும் மாதம் / ஆண்டு
+</div>
+</td>
+</tr>
+
+</table>
+
+<br>
+
+<p>
+<b>English:</b><br>
+I hereby authorize my PAO/DDO to deduct premia towards my PLI policy with particulars furnished above. I hereby declare that I will be personally responsible for ensuring regular deduction of premium from my salary and credit of the same towards my policy. Any change in the policy affecting premium (such as surrender, commutation, conversion, mode of premium payment, etc.) shall be immediately communicated to the concerned PAO / PLI-CPC.
+</p>
+
+<p>
+<b>தமிழ்:</b><br>
+மேலே வழங்கப்பட்ட விவரங்களின் அடிப்படையில், என் PLI காப்பீட்டிற்கான தவணை தொகையை என் சம்பளத்திலிருந்து பிடித்தம் செய்ய என் PAO/DDO-க்கு நான் அனுமதி அளிக்கிறேன். சம்பளத்திலிருந்து தவணை முறையாக பிடித்தம் செய்யப்பட்டு என் காப்பீட்டில் சேர்க்கப்படுவதை உறுதி செய்வது என் தனிப்பட்ட பொறுப்பு. காப்பீட்டு காலத்தில் தவணையை பாதிக்கும் எந்த மாற்றமும் ஏற்பட்டால், அதனை உடனடியாக சம்பந்தப்பட்ட PAO / PLI-CPC அலுவலகத்திற்கு அறிவிப்பேன்.
+</p>
+
+<br>
+
+<b>Signature of Insurant (காப்பீட்டாளர் கையொப்பம்)</b><br>
+Name (பெயர்): ___________<br>
+Mobile (மொபைல் எண்): ___________<br>
+Email Address (மின்னஞ்சல்): ___________<br>
+
+<br>
+
+<b>Countersigned by Immediate Superior / Employer</b><br>
+<b>உடனடி மேலதிகாரி / பணியளிப்பவர் எதிர் கையொப்பம்</b><br>
+Signature (கையொப்பம்): ___________<br>
+Name (பெயர்): ___________<br>
+Office Stamp (அலுவலக முத்திரை)
+
+<br><br>
+
+<b>For Office Use (அலுவலக பயன்பாட்டிற்கு மட்டும்)</b>
+
+<p>
+<b>English:</b><br>
+The details furnished by the insurant above have been checked and verified with the Proposal Form and found to be correct.
+</p>
+
+<p>
+<b>தமிழ்:</b><br>
+மேலே காப்பீட்டாளர் வழங்கிய விவரங்கள், முன்மொழிவு படிவத்தில் உள்ள விவரங்களுடன் சரிபார்க்கப்பட்டு சரியானவை என உறுதி செய்யப்பட்டுள்ளது.
+</p>
+
+<b>Signature of CPC In-charge with Stamp<br>
+(CPC பொறுப்பாளர் கையொப்பம் மற்றும் முத்திரை)</b>
+<h2>Audio 1: Purpose/நோக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio1')">⏪</button>
+        <button onclick="playPauseAudio('audio1')">▶️</button>
+        <button onclick="forwardAudio('audio1')">⏩</button>
+        <audio id="audio1" src="pliuse.ogg"></audio>
+    </div>
+
+    <h2>Audio 2: Explanation/விளக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio2')">⏪</button>
+        <button onclick="playPauseAudio('audio2')">▶️</button>
+        <button onclick="forwardAudio('audio2')">⏩</button>
+        <audio id="audio2" src="pliexp.ogg"></audio>
+    </div>
+
+<div class="back-btn-container">
+  <button type="button" class="back-btn"
+          onclick="window.location.href='main.html'">
+    ⬅ Back to Home
+  </button>
+</div>
+
+</div>
+<script src="voice.js"></script>
+<script>
+function show(id){
+  document.querySelectorAll('.help').forEach(h=>h.style.display='none');
+  document.getElementById(id).style.display='block';
+}
+</script>
+</body>
+</html>

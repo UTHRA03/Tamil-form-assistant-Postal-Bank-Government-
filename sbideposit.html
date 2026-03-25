@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office FORM-D Deposit Slip (with Full Instructions)</title>
+    <link rel="stylesheet" href="voice.css">
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f9f9f9; }
+        .form-container { display: flex; gap: 30px; }
+        .half-form { flex: 1; border: 2px solid #000; padding: 20px; background: white; position: relative; page-break-inside: avoid; }
+        h1 { text-align: center; font-size: 14px; margin: 10px 0; }
+        h2 { text-align: center; margin: 5px 0 15px 0; font-size: 12px; }
+        .header { display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 10px; }
+        label { display: block; font-weight: bold; margin-bottom: 3px; font-size: 11px; position: relative; }
+        input { width: 100%; padding: 4px; margin-bottom: 8px; border: 1px solid #333; box-sizing: border-box; font-size: 12px; }
+        .amount-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin: 8px 0; font-size: 11px; }
+        .amount-row input { width: 35px; height: 20px; text-align: center; }
+        .total-row input { font-weight: bold; border-bottom: 2px solid #000; }
+        .signature { margin-top: 15px; }
+        .teller-section { margin-top: 20px; border-top: 1px solid #000; padding-top: 10px; font-size: 10px; }
+        .teller-note { font-size: 9px; margin-top: 5px; }
+        [title] { position: relative; cursor: help; border-bottom: 1px dotted #666; }
+        [title]:hover:after {
+            content: attr(title);
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            background: #ffff99;
+            padding: 8px;
+            border: 1px solid #000;
+            z-index: 100;
+            white-space: normal;
+            width: 250px;
+            font-size: 11px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            line-height: 1.3;
+        }
+        .section-title { font-weight: bold; font-size: 12px; margin: 10px 0 5px 0; }
+        footer { text-align: center; font-size: 10px; margin-top: 20px; }
+        .back-btn-container{
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+        .back-btn{
+            background-color: #ffcc00;
+            color: #000;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .back-btn:hover{
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <h1 title="படிவம் D (ஆலோசனை 3 மற்றும் 10-இன் கீழ்) [2006] - FORM-D (Sub-rule (1) of Rule 3 & Rule 10) [2006]. இது மூத்த குடிமக்கள் சேமிப்புத் திட்ட (SCSS) டெபாசிட்களுக்கான pay-in-slip. அஞ்சல் அலுவலகத்தில் கணக்குக்கு பணம் ஜமா செய்ய பயன்படுத்தவும். [தமிழ்]">FORM-D (See sub-rule (1) of rule 3 and rule 10) [2006]</h1>
+    
+    <div class="form-container">
+        <!-- Depositor's Copy -->
+        <div class="half-form">
+            <h2 title="இது டெபாசிட்டருக்கு (ஒரு நகல்) - Depositor receives this copy as receipt after deposit. Keep safely for records. [தமிழ்]">DEPOSITOR'S COPY</h2>
+            <div class="header" title="அஞ்சல் அலுவலகம் மற்றும் SBI கிளை முகவரி - Post Office & SBI Branch Address. உங்கள் அஞ்சல் அலுவலக முகவரியை எழுதவும். [தமிழ்]">
+                <div>Post Office:</div>
+                <div>SBI Branch Address: Post Office Copy</div>
+            </div>
+            
+            <label title="பெயர் மற்றும் முகவரி - Name & Address. உங்கள் முழு பெயர் மற்றும் முகவரியை தெளிவாக எழுதவும் (பாஸ்புக் போல). கேபிடல் எழுத்துகளில். [தமிழ்]">Name & Address:</label>
+            <input type="text" placeholder="Enter full name and address">
+
+            <label title="தந்தை / மனைவி பெயர் - Father/Husband name. பாஸ்புக் அல்லது ID-ல் உள்ள தந்தை/மனைவி பெயரை எழுதவும். கட்டாயம். [தமிழ்]">Father/Husband name:</label>
+            <input type="text" placeholder="Enter father's/husband's name">
+
+            <label title="SCSS கணக்கு எண் - SCSS A/C No. பாஸ்புக் முன்பக்கத்தில் உள்ள 10-அ数字 கணக்கு எண்ணை எழுதவும். தவறாக இருந்தால் டெபாசிட் நிராகரிக்கப்படும். [தமிழ்]">SCSS A/C No:</label>
+            <input type="text" placeholder="Enter 10-digit account number">
+
+            <label title="SCSS/NB டெபாசிட் கட்டணம் ₹ - SCSS/NB Deposit Charge. சகஜமாக 0. ஆனால் சில சமயங்களில் அஞ்சல் அலுவலகம் வசூல் செய்யலாம். அதிகாரியிடம் கேளுங்கள். [தமிழ்]">SCSS/NB Deposit Charge ₹:</label>
+            <input type="number" step="0.01" placeholder="Usually 0.00">
+
+            <label title="செக்/டி/ஆர் வசூல் கட்டணம் ₹ - Cheque/DD Realisation Charges. செக்/டிமாண்ட் டிராஃப்ட் கொடுத்தால் வசூல் செய்யப்படும் கட்டணம் (பொதுவாக ₹1-5). பணத்திற்கு 0. [தமிழ்]">Cheque/DD Charges ₹:</label>
+            <input type="number" step="0.01" placeholder="0.00 if cash">
+
+            <label title="மற்ற IP/SSF கட்டணங்கள் ₹ - Other IP/SSF Charges. போஸ்ட் ஆபீஸ் ஸ்கீம்களுக்கான கூடுதல் கட்டணங்கள். சகஜமாக 0. அதிகாரியிடம் உறுதிப்படுத்தவும். [தமிழ்]">Other IP/SSF Charges ₹:</label>
+            <input type="number" step="0.01" placeholder="Usually 0.00">
+
+            <div class="section-title" title="பண டெபாசிட் விவரங்கள் - Cash Deposit Details. கையில் உள்ள நோட்டுகளின் எண்ணிக்கையை எழுதவும். மொத்தம் தானாகக் கணக்கிடப்படும். புதிய ₹2000, ₹500, ₹200, ₹100, ₹50, ₹20, ₹10, ₹5, ₹2, ₹1. [தமிழ்]">Amount of Cash Deposit Details</div>
+            <div class="amount-grid">
+                <div>1000 x <input type="number" min="0" value="0"></div>
+                <div>500 x <input type="number" min="0" value="0"></div>
+                <div>100 x <input type="number" min="0" value="0"></div>
+                <div>50 x <input type="number" min="0" value="0"></div>
+                <div>20 x <input type="number" min="0" value="0"></div>
+                <div>10 x <input type="number" min="0" value="0"></div>
+            </div>
+            <label title="மொத்த பணம் ₹ - Total By Cash. மேலுள்ள நோட்டுகளின் மொத்த தொகை. கணக்கிட: (1000*x1) + (500*x2) + ... [தமிழ்]">Total By Cash ₹:</label>
+            <input type="number" class="total-row" placeholder="Calculate total">
+
+            <label title="செக்/டிமாண்ட் டிராஃப்ட் விவரங்கள் - Cheque/Demand Draft No & Date (Bank/Branch on which drawn). செக் கொடுத்தால்: எண், தேதி, வங்கி/கிளை பெயர் எழுதவும். செக் SSE பெயரில் இருக்க வேண்டும். பணத்திற்கு விட்டுவிடவும். [தமிழ்]">Cheque / Demand Draft No & Date <br><span style="font-weight:normal;">(Bank/Branch on which drawn)</span>:</label>
+            <input type="text" placeholder="No: XXXX, Date: DD/MM/YYYY, Bank: XXX Branch: XXX">
+
+            <div class="signature" title="டெபாசிட்டர் கையொப்பம் - Depositor's Signature. நீங்கள் தானே கையொப்பமிடவும். ID சரிபார்க்கப்படும். [தமிழ்]">
+                <label>Depositor's Signature:</label>
+                <div style="border-bottom:1px solid #000; height:25px; margin-bottom:10px;"></div>
+            </div>
+
+            <div class="teller-section" title="டெல்லர்/ஏசி எண் மற்றும் சேவை மேலாளர் - Teller/A/C No & Service Manager. அஞ்சல் ஊழியர்கள் நிரப்புவர். உங்கள் பணம் பெற்றுக்கொள்ளப்பட்டதை உறுதிப்படுத்தும். [தமிழ்]">
+                <label>Teller / A/C No:</label>
+                <input type="text" readonly>
+                <label>Service Manager:</label>
+                <input type="text" readonly>
+                <div class="teller-note" title="1. செக் டெபாசிட் SSE பெயரில் இருக்க வேண்டும். டெபாசிட்டரின் கையொப்பம் கட்டாயம். (POSB விதிகள்) - 1. Cheque deposit shall be in favour of the SSE. Depositor's signature required. [தமிழ்]">1. The cheque deposit shall be in favour of the SSE. The depositor's signature is required.</div>
+            </div>
+        </div>
+
+        <!-- Bank's Copy -->
+        <div class="half-form">
+            <h2 title="இது வங்கி/அஞ்சல் அலுவலக நகல் - Bank's Copy retained by post office for records. Do not fill this; it's a duplicate. [தமிழ்]">BANK'S COPY</h2>
+            <div class="header" title="SBI கிளை முகவரி மற்றும் அஞ்சல் அலுவலக நகல் - Same as left side. [தமிழ்]">
+                <div>SBI Branch Address:</div>
+                <div>Post Office Copy</div>
+            </div>
+
+            <!-- Duplicate fields with same tooltips -->
+            <label title="பெயர் மற்றும் முகவரி - Name & Address. உங்கள் முழு பெயர் மற்றும் முகவரியை தெளிவாக எழுதவும் (பாஸ்புக் போல). கேபிடல் எழுத்துகளில். [தமிழ்]">Name & Address:</label>
+            <input type="text" placeholder="Enter full name and address">
+
+            <label title="தந்தை / மனைவி பெயர் - Father/Husband name. பாஸ்புக் அல்லது ID-ல் உள்ள தந்தை/மனைவி பெயரை எழுதவும். கட்டாயம். [தமிழ்]">Father/Husband name:</label>
+            <input type="text" placeholder="Enter father's/husband's name">
+
+            <label title="SCSS கணக்கு எண் - SCSS A/C No. பாஸ்புக் முன்பக்கத்தில் உள்ள 10-அ数字 கணக்கு எண்ணை எழுதவும். தவறாக இருந்தால் டெபாசிட் நிராகரிக்கப்படும். [தமிழ்]">SCSS A/C No:</label>
+            <input type="text" placeholder="Enter 10-digit account number">
+
+            <label title="SCSS/NB டெபாசிட் கட்டணம் ₹ - SCSS/NB Deposit Charge. சகஜமாக 0. ஆனால் சில சமயங்களில் அஞ்சல் அலுவலகம் வசூல் செய்யலாம். அதிகாரியிடம் கேளுங்கள். [தமிழ்]">SCSS/NB Deposit Charge ₹:</label>
+            <input type="number" step="0.01" placeholder="Usually 0.00">
+
+            <label title="செக்/டி/ஆர் வசூல் கட்டணம் ₹ - Cheque/DD Realisation Charges. செக்/டிமாண்ட் டிராஃப்ட் கொடுத்தால் வசூல் செய்யப்படும் கட்டணம் (பொதுவாக ₹1-5). பணத்திற்கு 0. [தமிழ்]">Cheque/DD Charges ₹:</label>
+            <input type="number" step="0.01" placeholder="0.00 if cash">
+
+            <label title="மற்ற IP/SSF கட்டணங்கள் ₹ - Other IP/SSF Charges. போஸ்ட் ஆபீஸ் ஸ்கீம்களுக்கான கூடுதல் கட்டணங்கள். சகஜமாக 0. அதிகாரியிடம் உறுதிப்படுத்தவும். [தமிழ்]">Other IP/SSF Charges ₹:</label>
+            <input type="number" step="0.01" placeholder="Usually 0.00">
+
+            <div class="section-title" title="பண டெபாசிட் விவரங்கள் - Cash Deposit Details. கையில் உள்ள நோட்டுகளின் எண்ணிக்கையை எழுதவும். மொத்தம் தானாகக் கணக்கிடப்படும். புதிய ₹1000, ₹500, ₹100, ₹50, ₹20, ₹10. [தமிழ்]">Amount of Cash Deposit Details</div>
+            <div class="amount-grid">
+                <div>1000 x <input type="number" min="0" value="0"></div>
+                <div>500 x <input type="number" min="0" value="0"></div>
+                <div>100 x <input type="number" min="0" value="0"></div>
+                <div>50 x <input type="number" min="0" value="0"></div>
+                <div>20 x <input type="number" min="0" value="0"></div>
+                <div>10 x <input type="number" min="0" value="0"></div>
+            </div>
+            <label title="மொத்த பணம் ₹ - Total By Cash. மேலுள்ள நோட்டுகளின் மொத்த தொகை. கணக்கிட: (1000*x1) + (500*x2) + ... [தமிழ்]">Total By Cash ₹:</label>
+            <input type="number" class="total-row" placeholder="Calculate total">
+
+            <label title="செக்/டிமாண்ட் டிராஃப்ட் விவரங்கள் - Cheque/Demand Draft No & Date (Bank/Branch on which drawn). செக் கொடுத்தால்: எண், தேதி, வங்கி/கிளை பெயர் எழுதவும். செக் SSE பெயரில் இருக்க வேண்டும். பணத்திற்கு விட்டுவிடவும். [தமிழ்]">Cheque / Demand Draft No & Date <br><span style="font-weight:normal;">(Bank/Branch on which drawn)</span>:</label>
+            <input type="text" placeholder="No: XXXX, Date: DD/MM/YYYY, Bank: XXX Branch: XXX">
+
+            <div class="signature" title="டெபாசிட்டர் கையொப்பம் - Depositor's Signature. நீங்கள் தானே கையொப்பமிடவும். ID சரிபார்க்கப்படும். [தமிழ்]">
+                <label>Depositor's Signature:</label>
+                <div style="border-bottom:1px solid #000; height:25px; margin-bottom:10px;"></div>
+            </div>
+
+            <div class="teller-section" title="டெல்லர்/ஏசி எண் மற்றும் சேவை மேலாளர் - Filled by post office staff. [தமிழ்]">
+                <label>Teller / A/C No:</label>
+                <input type="text" readonly>
+                <label>Service Manager:</label>
+                <input type="text" readonly>
+                <div class="teller-note" title="2. செக் டெபாசிட் SSE பெயரில் இருக்க வேண்டும். டெபாசிட்டரின் கையொப்பம் கட்டாயம். (POSB விதிகள்) - 2. Cheque deposit shall be in favour of the SSE. Depositor's signature required. [தமிழ்]">2. The cheque deposit shall be in favour of the SSE. The depositor's signature is required.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer title="பயன்பாட்டு குறிப்பு: இரு நகல்களையும் நிரப்பி, பணத்துடன் சமர்ப்பிக்கவும். டெபாசிட்டரின் நகலை பெறவும். SCSS-க்கு ஆண்டு அதிகபட்ச டெபாசிட் ₹30 லட்சம். TDS விதிகள் பொருந்தும். [தமிழ்]">
+        <strong>Instructions:</strong> Fill both copies identically. Submit with cash/cheque. Get Depositor's copy stamped as receipt. Cheque must favor 'SSE [Post Office Name]'. Max SCSS deposit ₹30 lakhs/
+        <h2>Audio 1: Purpose/நோக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio1')">⏪</button>
+        <button onclick="playPauseAudio('audio1')">▶️</button>
+        <button onclick="forwardAudio('audio1')">⏩</button>
+        <audio id="audio1" src="depositbankuse.ogg"></audio>
+    </div>
+
+    <h2>Audio 2: Explanation/விளக்கம்</h2>
+    <div class="audio-player">
+        <button onclick="rewindAudio('audio2')">⏪</button>
+        <button onclick="playPauseAudio('audio2')">▶️</button>
+        <button onclick="forwardAudio('audio2')">⏩</button>
+        <audio id="audio2" src="depositbankexp.mp3"></audio>
+    </div>
+
+        <div style="text-align:center; margin:20px 0;">
+        <button type="button" class="back-btn" onclick="window.location.href='main.html'">
+            ⬅ Back to Home
+        </button>
+    </div>
+    <script src="voice.js"></script>
+</body>
+</html>

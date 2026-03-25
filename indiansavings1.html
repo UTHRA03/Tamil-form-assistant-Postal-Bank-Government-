@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<title>Bank Account Opening Form</title>
+
+<style>
+body{
+    font-family:"Times New Roman", serif;
+    background:#eef6ff;
+}
+.form{
+    width:1100px;
+    margin:20px auto;
+    background:white;
+    border:2px solid #5aa9ff;
+    padding:15px;
+}
+h2{
+    color:#5aa9ff;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+table, th, td{
+    border:1px solid #5aa9ff;
+}
+td{
+    padding:6px;
+}
+input[type="text"]{
+    border:none;
+    border-bottom:1px solid #5aa9ff;
+    width:95%;
+    padding:4px;
+}
+.section-title{
+    background:#5aa9ff;
+    color:white;
+    padding:6px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+/* Instruction panel */
+#instructionBox{
+    margin:15px 0;
+    padding:10px;
+    border:2px solid #5aa9ff;
+    background:#f4faff;
+    color:#003366;
+    font-weight:bold;
+}
+.footer{
+    text-align:right;
+    margin-top:15px;
+    color:#5aa9ff;
+}
+.back-btn-container{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.back-btn{
+    background-color: #ffcc00;
+    color: #000;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-btn:hover{
+    background-color: #e6b800;
+}
+</style>
+
+<script>
+function showInstruction(text){
+    document.getElementById("instructionBox").innerText = text;
+}
+</script>
+
+</head>
+<body>
+
+<div class="form">
+
+<h2>வங்கி கணக்கு திறப்பு விண்ணப்பம் / Bank Account Opening Form</h2>
+
+<div id="instructionBox">
+புலத்தில் கிளிக் செய்தால் வழிமுறைகள் இங்கே தோன்றும்.
+</div>
+
+<!-- Applicant Details -->
+<table>
+<tr>
+<td>பெயர் / Name</td>
+<td>
+<input type="text" onclick="showInstruction('பிறப்பு சான்றிதழில் உள்ளபடி முழுப் பெயரை எழுதவும்')">
+</td>
+</tr>
+
+<tr>
+<td>முகவரி / Address</td>
+<td>
+<input type="text" onclick="showInstruction('தற்போதைய முழு முகவரியை எழுதவும்')">
+</td>
+</tr>
+
+<tr>
+<td>தேசியம் / Nationality</td>
+<td>
+<input type="text" onclick="showInstruction('உங்கள் நாட்டின் பெயரை எழுதவும்')">
+</td>
+</tr>
+
+<tr>
+<td>பிறந்த தேதி / Date of Birth</td>
+<td>
+<input type="text" onclick="showInstruction('DD/MM/YYYY வடிவத்தில் எழுதவும்')">
+</td>
+</tr>
+
+<tr>
+<td>பிறந்த இடம் / Place of Birth</td>
+<td>
+<input type="text" onclick="showInstruction('பிறந்த ஊர் அல்லது நகரத்தின் பெயரை எழுதவும்')">
+</td>
+</tr>
+</table>
+
+<!-- Guardian Details -->
+<div class="section-title">
+பாதுகாவலர் விவரங்கள் / Guardian Details
+</div>
+
+<table>
+<tr>
+<td>பாதுகாவலர் பெயர் / Guardian Name</td>
+<td>
+<input type="text" onclick="showInstruction('பாதுகாவலரின் முழுப் பெயரை எழுதவும்')">
+</td>
+</tr>
+
+<tr>
+<td>பாதுகாவலர் முகவரி / Guardian Address</td>
+<td>
+<input type="text" onclick="showInstruction('பாதுகாவலரின் தற்போதைய முகவரியை எழுதவும்')">
+</td>
+</tr>
+
+<tr>
+<td>தொலைபேசி எண் / Phone Number</td>
+<td>
+<input type="text" onclick="showInstruction('10 இலக்க மொபைல் எண்ணை எழுதவும்')">
+</td>
+</tr>
+
+<tr>
+<td>மின்னஞ்சல் / Email</td>
+<td>
+<input type="text" onclick="showInstruction('சரியான மின்னஞ்சல் முகவரியை எழுதவும்')">
+</td>
+</tr>
+</table>
+
+<!-- Banking Services -->
+<div class="section-title">
+வங்கி சேவைகள் / Banking Services
+</div>
+
+<table>
+<tr>
+<td>
+<input type="checkbox" onclick="showInstruction('டெபிட் கார்டு சேவையை தேர்வு செய்கிறீர்கள்')">
+டெபிட் கார்டு / Debit Card
+</td>
+
+<td>
+<input type="checkbox" onclick="showInstruction('இணைய வங்கி சேவையை தேர்வு செய்கிறீர்கள்')">
+இணைய வங்கி / Online Banking
+</td>
+
+<td>
+<input type="checkbox" onclick="showInstruction('தொலைபேசி வங்கி சேவையை தேர்வு செய்கிறீர்கள்')">
+தொலைபேசி வங்கி / Telephone Banking
+</td>
+</tr>
+</table>
+
+<!-- Agreement -->
+<div class="section-title">
+கணக்கு ஒப்பந்தம் / Account Agreement
+</div>
+
+<p onclick="showInstruction('இந்த பகுதி தகவலுக்காக மட்டுமே. படித்து உறுதிப்படுத்தவும்.')">
+இந்தக் கணக்கு தற்போதைய கணக்காக செயல்படும்.  
+வங்கி காலாண்டு அறிக்கை வழங்கும்.  
+This account will be operated as a current account and periodic statements will be issued.
+</p>
+
+<!-- Guardian Rights -->
+<div class="section-title">
+பாதுகாவலர் உரிமை / Guardian Rights
+</div>
+
+<table>
+<tr>
+<td>
+<input type="checkbox" onclick="showInstruction('இரு பாதுகாவலர்களும் கணக்கை இயக்குவார்கள்')">
+பாதுகாவலர்கள் இணைந்து / Jointly
+</td>
+
+<td>
+<input type="checkbox" onclick="showInstruction('ஒரே பாதுகாவலர் கணக்கை இயக்குவார்')">
+ஒருவரே / Single Guardian
+</td>
+</tr>
+</table>
+
+<!-- Transaction Rights -->
+<div class="section-title">
+பண பரிவர்த்தனை உரிமை / Transaction Rights
+</div>
+
+<table>
+<tr>
+<td>
+<input type="checkbox" onclick="showInstruction('குழந்தைக்கு பண பரிவர்த்தனை உரிமை இல்லை')">
+உரிமை இல்லை / No Rights
+</td>
+
+<td>
+<input type="checkbox" onclick="showInstruction('பாதுகாவலர் அனுமதியுடன் பரிவர்த்தனை செய்யலாம்')">
+பாதுகாவலர் அனுமதியுடன் / With Guardian Permission
+</td>
+</tr>
+</table>
+
+<div >
+    <button type="button" onclick="nextPage()">Next</button>
+
+<script>
+function nextPage() {
+  window.location.href = "sbisavings2.html";
+}
+</script>
+
+
+</div>
+
+</div>
+
+</body>
+</html>
